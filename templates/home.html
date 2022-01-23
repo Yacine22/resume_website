@@ -1,0 +1,82 @@
+{% extends 'constants.html' %}
+{% block main %}
+{% load static %}
+    <header>
+        <div class="cover bg-light">
+          <div class="container px-3">
+            <div class="row">
+              <div class="col-lg-6 p-2"><img class="img-fluid" src="{% static '/images/illustrations/hello3.svg' %}" width="400" height="400" alt="hello"/></div>
+              <div class="col-lg-6">
+                <div class="mt-5">
+                  <p class="lead text-uppercase mb-1">Hello!</p>
+                  <h1 style="font-family: Courier;" >I'am Yacine MERABET</h1>
+                  <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">Embedded Software Developer & AI Engineer</p>
+                  <div class="social-nav" data-aos="fade-up" data-aos-delay="100">
+                    <nav role="navigation">
+                      <ul class="nav justify-content-left">
+                        <li class="nav-item"><a class="nav-link" href="https://twitter.com/yas_di" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/yacine.merabet1" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/self.yacine" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/yacine-merabet22/" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.github.com/Yacine22" title="GitHub"><i class="fab fa-github"></i><span class="menu-title sr-only">GitHub</span></a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a class="btn btn-primary shadow-sm mt-1 hover-effect" href="/contact/">Get In Touch <i class="fas fa-arrow-right"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave-bg"></div>
+      </header>
+      <div class="section pt-4 px-3 px-lg-4" id="home">
+        <div class="container-narrow">
+          <div class="row">
+            <div class="col-md-5">
+              <p>I am passionate about Electronics, Embedded Systems and Robotics. I had a relevant experience in Computer Vision and Image Processing, 
+                  I am a skilled embedded software developer and master of Robotics and control theory, I work with tools such as Photoshop, Illustrator and Sketch Up. Recently, I used to work with 3D printing. 
+                  I am a quick learner and a team worker that gets the job done. I can easily capitalize on low hanging fruits and quickly maximize timely deliverables for real-time schemas.</p>
+              <div class="row mt-5">
+                <div class="col-sm-2">
+                  <div class="pb-1">Age:</div>
+                </div>
+                <div class="col-sm-10">
+                  <div class="pb-1 fw-bolder">27</div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="pb-1">Email:</div>
+                </div>
+                <div class="col-sm-10">
+                  <div class="pb-1 fw-bolder">yacine.merabet22@gmail.com</div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="pb-1">Skype:</div>
+                </div>
+                <div class="col-sm-10">
+                  <div class="pb-1 fw-bolder">yacine.merabet22</div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="pb-1">Phone:</div>
+                </div>
+                <div class="col-sm-10">
+                  <div class="pb-1 fw-bolder">+33 767 340 210</div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="pb-1">Address:</div>
+                </div>
+                <div class="col-sm-10">
+                  <div class="pb-1 fw-bolder">Marseille, France</div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="pb-1">Staus:</div>
+                </div>
+                <div class="col-sm-10">
+                  <div class="pb-1 fw-bolder">Not Available</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src="{% static '/images/avatar.png' %}" width="375" height="500" alt="Yacine Merabet"/></div>
+          </div>
+        </div>
+{% endblock %}

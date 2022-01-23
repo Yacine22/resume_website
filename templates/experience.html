@@ -1,0 +1,79 @@
+{% extends 'constants.html' %}
+{% block main %}
+{% load static %}
+<div class="section px-3 px-lg-5 pt-6" id="experience">
+    <div class="container-narrow">
+        <div class="text-center mb-5">
+            <h2 class="marker marker-center">Experience</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-3" data-aos="fade-right" data-aos-delay="100">
+                <div class="card-header px-3 py-2">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h3 class="h5 mb-1">Embedded Software Engineer</h3>
+                      <div class="text-muted text-small">CNRS Lab.<small>(2021-Now)</small></div>
+                    </div><img src="{% static '/images/services/img_emb.svg' %}" width="48" height="48" alt="ui-ux"/>
+                  </div>
+                </div>
+                <div class="card-body px-3 py-2">
+                  <p>Programming of several embedded systems such a Raspberry Pi and Arduino cards</p>
+                  <p>Development of GUI for task controlling</p>
+                  <p>3D printing</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3" data-aos="fade-left" data-aos-delay="300">
+                <div class="card-header px-3 py-2">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h3 class="h5 mb-1">Image Processing Engineer</h3>
+                      <div class="text-muted text-small">INSA LYON Lab. <small>(2020-2021)</small></div>
+                    </div><img src="{% static '/images/services/app-development.svg' %}" width="48" height="48" alt="app development"/>
+                  </div>
+                </div>
+                <div class="card-body px-3 py-2">
+                  <p>Leverage agile frameworks to provide a robust algorithms for high level vessel segmentation. </p>
+                  <p>Using image Processing tools such as 3D Slicer, Machine Learning packages such as SkLearn and TensorFlow.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3" data-aos="fade-right" data-aos-delay="200">
+                <div class="card-header px-3 py-2">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h3 class="h5 mb-1">AI Engineer</h3>
+                      <div class="text-muted text-small">LISV Versailles University Lab. <small>(2019-2020)</small></div>
+                    </div><img src="{% static '/images/services/web-design.svg' %}" width="48" height="48" alt="web design"/>
+                  </div>
+                </div>
+                <div class="card-body px-3 py-2">
+                  <p>Object Detection in 2D images using OpenCv and TensorFlow.</p>
+                  <p>Test of CNN architectures such as YOLO v3 and RCNN.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3" data-aos="fade-left" data-aos-delay="400">
+                    <div class="card-header px-3 py-2">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h3 class="h5 mb-1">Robotics Student - Msc Graduate</h3>
+                                <div class="text-muted text-small">Paris Saclay University <small>(2019-2020)</small></div>
+                            </div><img src="{% static '/images/services/full-stack.svg' %}" width="48" height="48" alt="full stack"/>
+                        </div>
+                    </div>
+                    <div class="card-body px-3 py-2">
+                        <p>Robot modeling and control using Matlab and OpenSim tools.</p>
+                        <p>Advanced systems control : Fuzzy Logic, LQ...etc</p>
+                        <p>3D Conception with CATIA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

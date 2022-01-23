@@ -1,0 +1,63 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
+    </noscript>
+    <link href="{% static 'css/font-awesome/css/all.min.css' %} rel="stylesheet">
+    <link href="{% static '/css/bootstrap-icons/bootstrap-icons.css' %} rel="stylesheet">
+    <link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static '/css/aos.css' %}" rel="stylesheet">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+</head>
+<body>
+    <ul style="list-style: none;">
+        <li style="display: inline-block; padding: 20px 60px;">
+            <a href="/" style="font-family: Courier;">ABOUT</a>
+        </li>
+        <li style="display: inline-block; padding: 20px 60px;">
+            <a href="/experience/" style="font-family: Courier;" >EXPERIENCE</a>
+        </li>
+        <li style="display: inline-block; padding: 20px 60px;">
+            <a href="/skills/" style="font-family: Courier;" >SKILLS</a>
+        </li>
+        <li style="display: inline-block; padding: 20px 60px;">
+            <a href="/contact/" style="font-family: Courier;" >CONTACT</a>
+        </li>
+    </ul>
+    {% block main %} {% endblock %}
+    <footer class="pt-4 pb-4 text-center bg-light">
+        <div class="container">
+          <div class="my-3">
+            <div class="h4">Yacine Merabet</div>
+            <p>Embedded Software Developer</p>
+          </div>
+          <div class="text-small text-secondary">
+            <div class="mb-1">&copy; Yacine's Resume. All rights reserved.</div>
+        </div>
+      </footer></div>
+    <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i class="fas fa-angle-up fa-x"></i></span></a></div>
+    <script src="{% static '/scripts/imagesloaded.pkgd.min.js?ver=1.2.0' %}"></script>
+    <script src="{% static '/scripts/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static '/scripts/BigPicture.min.js' %}"></script>
+    <script src="{% static '/scripts/purecounter.min.js' %}"></script>
+    <script src="{% static '/scripts/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static '/scripts/aos.min.js' %}"></script>
+    <script src="{% static '/scripts/main.js' %}"></script>
+</body>
+</html>
