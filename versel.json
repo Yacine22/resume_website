@@ -1,0 +1,13 @@
+{
+    "builds": [{
+        "src":"cv/wsgi.py",
+        "use": "@versel/python",
+        "config": { "maxLambdaSize":"15mb", "runtime":"python3.7"}
+    }],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"cv/wsgi.py"
+        }
+    ]
+}
