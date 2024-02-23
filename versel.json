@@ -2,7 +2,7 @@
     "builds": [{
         "src":"cv/wsgi.py",
         "use": "@versel/python",
-        "config": { "maxLambdaSize":"15mb", "runtime":"python3.7"}
+        "config": { "maxLambdaSize":"15mb", "runtime":"python3.9"}
     }],
     "routes":[
         {
